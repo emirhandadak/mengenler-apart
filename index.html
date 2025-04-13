@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <!-- ===== Meta Tags ===== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== Title ===== -->
+    <title>Mengenler Apart</title>
+
+    <!-- ===== Fonts ===== -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===== Favicon ===== -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- ===== Styles ===== -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+      }
+
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
+
+      .call-button {
+        display: inline-block;
+        margin-top: 15px;
+        background-color: #4db6ac;
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .call-button:hover {
+        background-color: #00695c;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <!-- ===== Navbar ===== -->
+    <header>
+      <nav class="navbar" id="navbar">
+        <h1 class="logo">Mengenler Apart</h1>
+        <div class="hamburger" id="hamburger">☰</div>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#odalar">Odalarımız</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero-slider">
+      <div class="hero-slide active">
+        <h2>Yaz Tatiliniz İçin Huzurlu Bir Seçim</h2>
+        <p>Denize yakın, doğayla iç içe bir apart deneyimi.</p>
+        <a href="#iletisim" class="button">Hemen İletişime Geç</a>
+      </div>
+
+      <div class="hero-slide">
+        <h2>Konforlu ve Temiz Odalar</h2>
+        <p>Ailenizle birlikte keyifli vakit geçireceğiniz alanlar.</p>
+        <a href="#galeri" class="button">Fotoğraflara Göz At</a>
+      </div>
+
+      <div class="hero-slide">
+        <h2>Doğayla İç İçe Bir Tatil</h2>
+        <p>Mavi ile yeşilin birleştiği noktada huzuru yakalayın.</p>
+        <a href="#iletisim" class="button">Rezervasyon İçin Bize Ulaşın</a>
+      </div>
+    </section>
+
+    <!-- ===== Hakkımızda ===== -->
+    <section id="hakkimizda" class="content-section">
+      <h2>Hakkımızda</h2>
+      <p>
+        Mengenler Apart, yaz aylarında konforlu ve huzurlu bir konaklama sunmak
+        için tasarlanmıştır. Aile ortamına uygun yapısıyla sizleri bekliyoruz.
+      </p>
+    </section>
+
+    <!-- ===== Galeri ===== -->
+    <section id="galeri" class="content-section">
+      <h2>Galeri</h2>
+      <div class="carousel">
+        <button class="carousel-btn prev">❮</button>
+        <div class="carousel-track">
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Apart Dış Görünüm 1"
+          />
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Apart Dış Görünüm 2"
+          />
+          <img
+            src="https://via.placeholder.com/300x200"
+            alt="Apart Dış Görünüm 3"
+          />
+        </div>
+        <button class="carousel-btn next">❯</button>
+      </div>
+      <div class="carousel-dots">
+        <span class="dot active-dot" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </section>
+
+    <!-- ===== Odalar ===== -->
+    <section id="odalar" class="content-section">
+      <h2>Odalarımız</h2>
+
+      <div class="oda">
+        <h3>Tek Kişilik Oda</h3>
+        <p>
+          Konforlu ve sade döşenmiş tek kişilik odalarımızda huzurlu bir
+          konaklama sizi bekliyor.
+        </p>
+
+        <div class="oda-carousel">
+          <button class="oda-btn prev tek-prev">❮</button>
+          <div class="oda-track tek-track">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Tek Kişilik Oda 1"
+            />
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Tek Kişilik Oda 2"
+            />
+          </div>
+          <button class="oda-btn next tek-next">❯</button>
+          <div class="oda-dots tek-dots">
+            <span class="dot active-dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="oda">
+        <h3>Çift Kişilik Oda</h3>
+        <p>
+          Geniş ve ferah çift kişilik odalarımız, çiftler ve arkadaşlar için
+          idealdir.
+        </p>
+
+        <div class="oda-carousel">
+          <button class="oda-btn prev cift-prev">❮</button>
+          <div class="oda-track cift-track">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Çift Kişilik Oda 1"
+            />
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Çift Kişilik Oda 2"
+            />
+          </div>
+          <button class="oda-btn next cift-next">❯</button>
+          <div class="oda-dots cift-dots">
+            <span class="dot active-dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== İletişim ===== -->
+    <section id="iletisim" class="content-section">
+      <h2>İletişim</h2>
+      <p>Telefon: <a href="tel:+905555555555">+90 555 555 55 55</a></p>
+      <p>
+        E-posta:
+        <a href="mailto:info@mengenlerapart.com">info@mengenlerapart.com</a>
+      </p>
+      <a href="tel:+905555555555" class="button call-button">📞 Hemen Ara</a>
+    </section>
+
+    <!-- ===== Konum ===== -->
+    <section id="konum" class="content-section">
+      <h2>Konum</h2>
+      <p>Apartımızın konumunu harita üzerinden görebilirsiniz:</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.789388050641!2d30.635841815410855!3d39.776733779444885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc1dbcfaaaaaa%3A0xf0f0f0f0f0f0f0f0!2sMengenler%20Apart!5e0!3m2!1str!2str!4v1610000000000!5m2!1str!2str"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+      <p>&copy; 2025 Mengenler Apart. Tüm hakları saklıdır.</p>
+      <div class="social-media">
+        <a
+          href="https://www.instagram.com/mengenlerapart"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+            alt="Instagram"
+            width="30"
+            height="30"
+          />
+        </a>
+        <a
+          href="https://wa.me/905555555555"
+          target="_blank"
+          aria-label="WhatsApp"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+            alt="WhatsApp"
+            width="30"
+            height="30"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/905555555555"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="WhatsApp ile İletişime Geç"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+        alt="WhatsApp"
+        width="50"
+        height="50"
+      />
+    </a>
+
+    <!-- ===== Carousel Script ===== -->
+    <script>
+      const track = document.querySelector(".carousel-track");
+      const slides = Array.from(track.children);
+      const prevBtn = document.querySelector(".carousel-btn.prev");
+      const nextBtn = document.querySelector(".carousel-btn.next");
+      let currentSlide = 0;
+
+      function updateCarousel() {
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+      }
+
+      prevBtn.addEventListener("click", () => {
+        currentSlide =
+          currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
+        updateCarousel();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        currentSlide =
+          currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
+        updateCarousel();
+      });
+
+      window.addEventListener("resize", updateCarousel);
+      updateCarousel();
+
+      const dots = document.querySelectorAll(".dot");
+
+      function updateDots() {
+        dots.forEach((dot) => dot.classList.remove("active-dot"));
+        dots[currentSlide].classList.add("active-dot");
+      }
+
+      dots.forEach((dot) => {
+        dot.addEventListener("click", (e) => {
+          const slideIndex = parseInt(e.target.getAttribute("data-slide"));
+          currentSlide = slideIndex;
+          updateCarousel();
+          updateDots();
+        });
+      });
+
+      updateDots();
+
+      let autoSlideInterval = setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateCarousel();
+        updateDots();
+      }, 4000);
+
+      let startX = 0;
+      let isDragging = false;
+
+      track.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+      });
+
+      track.addEventListener("touchmove", (e) => {
+        if (!isDragging) return;
+        const moveX = e.touches[0].clientX;
+        const diff = startX - moveX;
+        if (diff > 50) {
+          currentSlide = (currentSlide + 1) % slides.length;
+          updateCarousel();
+          updateDots();
+          isDragging = false;
+        } else if (diff < -50) {
+          currentSlide =
+            currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
+          updateCarousel();
+          updateDots();
+          isDragging = false;
+        }
+      });
+
+      track.addEventListener("touchend", () => {
+        isDragging = false;
+      });
+    </script>
+
+    <!-- ===== Room Slider Script ===== -->
+    <script>
+      function initOdaSlider(trackClass, prevClass, nextClass, dotClass) {
+        const track = document.querySelector(trackClass);
+        const slides = Array.from(track.children);
+        const prevBtn = document.querySelector(prevClass);
+        const nextBtn = document.querySelector(nextClass);
+        const dots = document.querySelectorAll(dotClass + " .dot");
+        let index = 0;
+
+        function update() {
+          const width = slides[0].getBoundingClientRect().width;
+          track.style.transform = `translateX(-${width * index}px)`;
+          dots.forEach((dot) => dot.classList.remove("active-dot"));
+          if (dots[index]) dots[index].classList.add("active-dot");
+        }
+
+        prevBtn.addEventListener("click", () => {
+          index = index === 0 ? slides.length - 1 : index - 1;
+          update();
+        });
+
+        nextBtn.addEventListener("click", () => {
+          index = index === slides.length - 1 ? 0 : index + 1;
+          update();
+        });
+
+        dots.forEach((dot, i) => {
+          dot.addEventListener("click", () => {
+            index = i;
+            update();
+          });
+        });
+
+        let startX = 0;
+        let isDragging = false;
+
+        track.addEventListener("touchstart", (e) => {
+          startX = e.touches[0].clientX;
+          isDragging = true;
+        });
+
+        track.addEventListener("touchmove", (e) => {
+          if (!isDragging) return;
+          const moveX = e.touches[0].clientX;
+          const diff = startX - moveX;
+          if (diff > 50) {
+            index = (index + 1) % slides.length;
+            update();
+            isDragging = false;
+          } else if (diff < -50) {
+            index = index === 0 ? slides.length - 1 : index - 1;
+            update();
+            isDragging = false;
+          }
+        });
+
+        track.addEventListener("touchend", () => {
+          isDragging = false;
+        });
+
+        setInterval(() => {
+          index = (index + 1) % slides.length;
+          update();
+        }, 4000);
+
+        window.addEventListener("resize", update);
+        update();
+      }
+
+      initOdaSlider(".tek-track", ".tek-prev", ".tek-next", ".tek-dots");
+      initOdaSlider(".cift-track", ".cift-prev", ".cift-next", ".cift-dots");
+    </script>
+
+    <!-- ===== Navbar Scroll Script ===== -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      });
+    </script>
+
+    <!-- ===== Hamburger Menu Script ===== -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+      const overlay = document.getElementById("menu-overlay");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        overlay.classList.toggle("active");
+      });
+
+      overlay.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        overlay.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
