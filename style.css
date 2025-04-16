@@ -116,7 +116,7 @@ p {
 
 .hero-slide h2 {
   font-size: 36px;
-  color: #1a1a1a;
+  color: #e0e0e0;
   letter-spacing: 1px;
   text-shadow: none;
 }
@@ -124,25 +124,26 @@ p {
 .hero-slide p {
   font-size: 18px;
   margin-top: 10px;
+  color: #cccccc;
 }
 
 .hero-slide a {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 24px;
-  background-color: #333;
-  color: #fff;
+  background-color: #a5d6a7;
+  color: #1a1a1a;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(77, 182, 172, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .hero-slide a:hover {
-  background-color: #555;
+  background-color: #81c784;
   transform: translateY(-3px);
-  box-shadow: 0 8px 16px rgba(0, 105, 92, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 /* -----------------------------------
@@ -582,27 +583,11 @@ footer a:hover {
 ----------------------------------- */
 .highlight-box {
   background-color: #ffffff;
-  border-left: 4px solid #4db6ac;
   padding: 20px;
   margin-top: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
-}
-
-.highlight-box ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-.highlight-box li {
-  margin-bottom: 8px;
-  color: #2c2c2c;
-  font-size: 16px;
-}
-
-.highlight-box p strong {
-  font-size: 18px;
-  color: #2e3a40;
+  border-radius: 20px;
+  border: 4px solid #4db6ac;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* -----------------------------------
@@ -656,11 +641,12 @@ footer a:hover {
 .contact-card {
   background-color: #fff;
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   max-width: 600px;
   margin: auto;
   text-align: center;
+  border: 4px solid #4db6ac;
 }
 
 /* -----------------------------------
