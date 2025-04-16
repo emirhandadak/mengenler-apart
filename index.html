@@ -114,6 +114,7 @@
         }
       }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   </head>
 
   <body>
@@ -279,77 +280,44 @@
 
     <!-- ===== İletişim ===== -->
     <section id="iletisim" class="content-section reveal-on-scroll">
-      <h2>İletişim</h2>
-      <p>Telefon: <a href="tel:+905555555555">+90 555 555 55 55</a></p>
-      <p>
-        E-posta:
-        <a href="mailto:info@mengenlerapart.com">info@mengenlerapart.com</a>
-      </p>
-      <a href="tel:+905555555555" class="button call-button">📞 Hemen Ara</a>
+      <div class="contact-card">
+        <h2>İletişim</h2>
+        <p><strong>Telefon:</strong> <a href="tel:+905555555555">+90 555 555 55 55</a></p>
+        <p><strong>E-posta:</strong> <a href="mailto:info@mengenlerapart.com">info@mengenlerapart.com</a></p>
+        <a href="tel:+905555555555" class="button call-button">📞 Hemen Ara</a>
+      </div>
     </section>
 
     <!-- ===== Konum ===== -->
     <section id="konum" class="content-section reveal-on-scroll">
       <h2>Konum</h2>
       <p>Apartımızın konumunu harita üzerinden görebilirsiniz:</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.789388050641!2d30.635841815410855!3d39.776733779444885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc1dbcfaaaaaa%3A0xf0f0f0f0f0f0f0f0!2sMengenler%20Apart!5e0!3m2!1str!2str!4v1610000000000!5m2!1str!2str"
-        width="100%"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.789388050641!2d30.635841815410855!3d39.776733779444885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc1dbcfaaaaaa%3A0xf0f0f0f0f0f0f0f0!2sMengenler%20Apart!5e0!3m2!1str!2str!4v1610000000000!5m2!1str!2str"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </section>
 
     <!-- ===== Footer ===== -->
     <footer>
       <p class="footer-copy">&copy; 2025 Mengenler Apart. Tüm hakları saklıdır.</p>
       <div class="social-media">
-        <a
-          href="https://www.instagram.com/mengenlerapart"
-          target="_blank"
-          aria-label="Instagram"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-            alt="Instagram"
-            width="30"
-            height="30"
-            loading="lazy"
-          />
+        <a href="https://www.instagram.com/mengenlerapart" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
         </a>
-        <a
-          href="https://wa.me/905555555555"
-          target="_blank"
-          aria-label="WhatsApp"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-            alt="WhatsApp"
-            width="30"
-            height="30"
-            loading="lazy"
-          />
+        <a href="https://wa.me/905555555555" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
         </a>
       </div>
     </footer>
 
-    <a
-      href="https://wa.me/905555555555"
-      class="whatsapp-float"
-      target="_blank"
-      aria-label="WhatsApp ile İletişime Geç"
-    >
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-        alt="WhatsApp"
-        width="50"
-        height="50"
-        loading="lazy"
-      />
-    </a>
 
     <!-- ===== Modal Görsel Gösterimi ===== -->
     <div id="image-modal" class="modal">
