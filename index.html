@@ -4,9 +4,31 @@
     <!-- ===== Meta Tags ===== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- ===== Title ===== -->
-    <title>Mengenler Apart</title>
+    <meta
+      name="description"
+      content="Mengenler Apart: Doğayla iç içe huzurlu konaklama. Aileye uygun, merkezi, konforlu yazlık apart."
+    />
+    <meta
+      name="keywords"
+      content="Mengenler Apart, yazlık apart, konaklama, tatil evi, huzurlu tatil, aile apartı, Eskişehir apart"
+    />
+    <meta name="author" content="Emirhan Dadak" />
+    <meta property="og:title" content="Mengenler Apart" />
+    <meta
+      property="og:description"
+      content="Doğayla iç içe huzurlu bir tatil. Mengenler Apart ile yazın keyfini çıkarın!"
+    />
+    <meta
+      property="og:image"
+      content="https://emirhandadak.github.io/mengenler-apart/preview.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://emirhandadak.github.io/mengenler-apart/"
+    />
+    <meta property="og:type" content="website" />
+    <title>Mengenler Apart | Huzurlu Yazlık Konaklama</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- ===== Fonts ===== -->
     <link
@@ -94,7 +116,7 @@
     </section>
 
     <!-- ===== Hakkımızda ===== -->
-    <section id="hakkimizda" class="content-section">
+    <section id="hakkimizda" class="content-section reveal-on-scroll">
       <h2>Hakkımızda</h2>
       <p>
         Mengenler Apart, yaz aylarında konforlu ve huzurlu bir konaklama sunmak
@@ -103,7 +125,7 @@
     </section>
 
     <!-- ===== Galeri ===== -->
-    <section id="galeri" class="content-section">
+    <section id="galeri" class="content-section reveal-on-scroll">
       <h2>Galeri</h2>
       <div class="carousel">
         <button class="carousel-btn prev">❮</button>
@@ -111,14 +133,17 @@
           <img
             src="https://picsum.photos/300/200?random=1"
             alt="Apart Dış Görünüm 1"
+            loading="lazy"
           />
           <img
             src="https://picsum.photos/300/200?random=2"
             alt="Apart Dış Görünüm 2"
+            loading="lazy"
           />
           <img
             src="https://picsum.photos/300/200?random=3"
             alt="Apart Dış Görünüm 3"
+            loading="lazy"
           />
         </div>
         <button class="carousel-btn next">❯</button>
@@ -131,7 +156,7 @@
     </section>
 
     <!-- ===== Odalar ===== -->
-    <section id="odalar" class="content-section">
+    <section id="odalar" class="content-section reveal-on-scroll">
       <h2>Odalarımız</h2>
 
       <div class="oda">
@@ -147,10 +172,12 @@
             <img
               src="https://picsum.photos/300/200?random=4"
               alt="Tek Kişilik Oda 1"
+              loading="lazy"
             />
             <img
               src="https://picsum.photos/300/200?random=5"
               alt="Tek Kişilik Oda 2"
+              loading="lazy"
             />
           </div>
           <button class="oda-btn next tek-next">❯</button>
@@ -174,10 +201,12 @@
             <img
               src="https://picsum.photos/300/200?random=6"
               alt="Çift Kişilik Oda 1"
+              loading="lazy"
             />
             <img
               src="https://picsum.photos/300/200?random=7"
               alt="Çift Kişilik Oda 2"
+              loading="lazy"
             />
           </div>
           <button class="oda-btn next cift-next">❯</button>
@@ -190,7 +219,7 @@
     </section>
 
     <!-- ===== İletişim ===== -->
-    <section id="iletisim" class="content-section">
+    <section id="iletisim" class="content-section reveal-on-scroll">
       <h2>İletişim</h2>
       <p>Telefon: <a href="tel:+905555555555">+90 555 555 55 55</a></p>
       <p>
@@ -201,7 +230,7 @@
     </section>
 
     <!-- ===== Konum ===== -->
-    <section id="konum" class="content-section">
+    <section id="konum" class="content-section reveal-on-scroll">
       <h2>Konum</h2>
       <p>Apartımızın konumunu harita üzerinden görebilirsiniz:</p>
       <iframe
@@ -229,6 +258,7 @@
             alt="Instagram"
             width="30"
             height="30"
+            loading="lazy"
           />
         </a>
         <a
@@ -241,6 +271,7 @@
             alt="WhatsApp"
             width="30"
             height="30"
+            loading="lazy"
           />
         </a>
       </div>
@@ -257,6 +288,7 @@
         alt="WhatsApp"
         width="50"
         height="50"
+        loading="lazy"
       />
     </a>
 
@@ -305,12 +337,6 @@
       });
 
       updateDots();
-
-      let autoSlideInterval = setInterval(() => {
-        currentSlide = (currentSlide + 1) % slides.length;
-        updateCarousel();
-        updateDots();
-      }, 4000);
 
       let startX = 0;
       let isDragging = false;
@@ -404,11 +430,6 @@
           isDragging = false;
         });
 
-        setInterval(() => {
-          index = (index + 1) % slides.length;
-          update();
-        }, 4000);
-
         window.addEventListener("resize", update);
         update();
       }
@@ -443,6 +464,21 @@
       overlay.addEventListener("click", () => {
         navMenu.classList.remove("active");
         overlay.classList.remove("active");
+      });
+    </script>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
+        observer.observe(el);
       });
     </script>
   </body>
