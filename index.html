@@ -3,10 +3,11 @@
   <head>
     <!-- ===== Meta Tags ===== -->
     <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Mengenler Apart: Doğayla iç içe huzurlu konaklama. Aileye uygun, merkezi, konforlu yazlık apart."
+      content="Mengenler Apart: Muğla'da merkezi konumda, doğayla iç içe huzurlu yazlık konaklama. Ailenizle güvenle kalabileceğiniz modern apart daireler."
     />
     <meta
       name="keywords"
@@ -27,8 +28,7 @@
       content="https://emirhandadak.github.io/mengenler-apart/"
     />
     <meta property="og:type" content="website" />
-    <title>Mengenler Apart | Huzurlu Yazlık Konaklama</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Mengenler Apart | Muğla Apart Daire</title>
 
     <!-- ===== Fonts ===== -->
     <link
@@ -121,7 +121,7 @@
     <!-- ===== Navbar ===== -->
     <header>
       <nav class="navbar" id="navbar">
-        <h1 class="logo">Mengenler Apart</h1>
+        <h1 class="logo"><span style="color:#4db6ac;">Mengenler</span> Apart</h1>
         <div class="hamburger" id="hamburger">☰</div>
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-links">
@@ -162,6 +162,14 @@
         Mengenler Apart, yaz aylarında konforlu ve huzurlu bir konaklama sunmak
         için tasarlanmıştır. Aile ortamına uygun yapısıyla sizleri bekliyoruz.
       </p>
+      <div class="highlight-box">
+        <p><strong>Avantajlarımız:</strong></p>
+        <ul>
+          <li>Merkezi konumda, ulaşımı kolay</li>
+          <li>Temiz ve düzenli odalar</li>
+          <li>Ailelere uygun, huzurlu ortam</li>
+        </ul>
+      </div>
     </section>
 
     <!-- ===== Galeri ===== -->
@@ -207,6 +215,11 @@
         </p>
 
         <div class="oda-carousel">
+        <div class="oda-etiket">
+          <span>🛏 1 Kişilik</span>
+          <span>📶 Wi-Fi</span>
+          <span>❄️ Klima</span>
+        </div>
           <button class="oda-btn prev tek-prev">❮</button>
           <div class="oda-track tek-track">
             <img
@@ -236,6 +249,12 @@
         </p>
 
         <div class="oda-carousel">
+        <div class="oda-etiket">
+          <span>🛏 2 Kişilik</span>
+          <span>📶 Wi-Fi</span>
+          <span>❄️ Klima</span>
+          <span>🪟 Balkon</span>
+        </div>
           <button class="oda-btn prev cift-prev">❮</button>
           <div class="oda-track cift-track">
             <img
@@ -286,7 +305,7 @@
 
     <!-- ===== Footer ===== -->
     <footer>
-      <p>&copy; 2025 Mengenler Apart. Tüm hakları saklıdır.</p>
+      <p class="footer-copy">&copy; 2025 Mengenler Apart. Tüm hakları saklıdır.</p>
       <div class="social-media">
         <a
           href="https://www.instagram.com/mengenlerapart"
@@ -550,6 +569,19 @@
         if (e.target === modal) {
           modal.style.display = "none";
         }
+      });
+    </script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth"
+            });
+          }
+        });
       });
     </script>
   </body>
