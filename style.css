@@ -409,22 +409,16 @@ footer {
   animation-delay: 0.6s;
 }
 
-/* -----------------------------------
-   WHATSAPP FLOATING BUTTON
------------------------------------ */
 .whatsapp-float {
   position: fixed;
-  bottom: calc(20px + env(safe-area-inset-bottom));
+  bottom: 20px;
   right: 20px;
   z-index: 1000;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
 }
 
-.whatsapp-float:hover {
-  transform: scale(1.1);
+.whatsapp-float img {
+  width: 48px;
+  height: 48px;
 }
 
 /* -----------------------------------
