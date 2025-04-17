@@ -561,18 +561,23 @@ footer {
   .carousel-track {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .carousel-slide {
     flex: 0 0 auto;
     width: 100%;
     max-width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .carousel-slide img {
     width: 90%;
     height: auto;
     margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
   }
 }
 
