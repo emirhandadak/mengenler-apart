@@ -31,7 +31,12 @@ body.menu-open {
   z-index: 999;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
   line-height: 1.3;
   color: #1a1a1a;
@@ -99,7 +104,8 @@ p {
    HERO SECTION
 ----------------------------------- */
 .hero-slider {
-  background: url("https://images.unsplash.com/photo-1560448204-e02f11c3d0e2") center/cover no-repeat;
+  background: url("https://images.unsplash.com/photo-1560448204-e02f11c3d0e2")
+    center/cover no-repeat;
   text-align: center;
   padding: 140px 20px 120px;
   position: relative;
@@ -177,18 +183,20 @@ p {
   scroll-behavior: smooth;
   overflow-x: hidden;
   touch-action: pan-y;
+  width: max-content;
 }
 
-.carousel-track img {
-  width: 300px;
-  height: 200px;
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.carousel-track img:hover {
+.carousel-slide img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3);
 }
@@ -248,31 +256,37 @@ p {
 }
 
 .oda-carousel {
-  position: relative;
-  overflow: hidden;
+  width: 100%;
   max-width: 700px;
-  margin: 20px auto;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .oda-track {
   display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
   transition: transform 0.4s ease-in-out;
-  gap: 20px;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  touch-action: pan-y;
 }
 
-.oda-track img {
-  width: 300px;
-  height: 200px;
+.oda-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.oda-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.oda-track img:hover {
+.oda-slide img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3);
 }
@@ -680,4 +694,13 @@ footer a:hover {
 .social-media a:hover {
   transform: scale(1.2);
   color: #2e3a40;
+}
+
+/* New carousel-slide container style */
+.carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
 }
