@@ -563,6 +563,23 @@ footer {
     font-size: 14px;
     padding: 15px;
   }
+
+  .carousel-track {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-slide {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .carousel-slide img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
 }
 
 /* -----------------------------------
