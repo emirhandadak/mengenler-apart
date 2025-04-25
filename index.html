@@ -149,7 +149,8 @@
     >
       <div class="hero-slide active">
         <h2>
-          Tatilinizde Ev Rahatlığı Arıyorsanız, Mengenler Apart’ta Yeriniz Hazır
+          Konaklamanızda Ev Rahatlığı Arıyorsanız, Mengenler Apart’ta Yeriniz
+          Hazır
         </h2>
         <p>Merkeze yakın konumuyla konforlu ve keyifli bir konaklama.</p>
         <a href="#iletisim" class="button">Hemen İletişime Geç</a>
@@ -192,45 +193,45 @@
     <!-- ===== Galeri ===== -->
     <section id="galeri" class="content-section reveal-on-scroll">
       <h2>Galeri</h2>
-      <div class="carousel">
-        <button class="carousel-btn prev">❮</button>
-        <div class="carousel-track">
-          <div class="carousel-slide">
+      <div class="oda-carousel">
+        <button class="oda-btn prev galeri-prev">❮</button>
+        <div class="oda-track galeri-track">
+          <div class="oda-slide">
             <img
               src="./images/galeri/galeri3.webp"
               alt="Apart Dış Görünüm 1"
               loading="lazy"
             />
           </div>
-          <div class="carousel-slide">
+          <div class="oda-slide">
             <img
               src="./images/galeri/galeri5.webp"
               alt="Apart Dış Görünüm 2"
               loading="lazy"
             />
           </div>
-          <div class="carousel-slide">
+          <div class="oda-slide">
             <img
               src="./images/galeri/galeri8.webp"
               alt="Apart Dış Görünüm 3"
               loading="lazy"
             />
           </div>
-          <div class="carousel-slide">
+          <div class="oda-slide">
             <img
               src="./images/galeri/galeri6.webp"
               alt="Apart Dış Görünüm 4"
               loading="lazy"
             />
           </div>
-          <div class="carousel-slide">
+          <div class="oda-slide">
             <img
               src="./images/galeri/galeri7.webp"
               alt="Apart Dış Görünüm 5"
               loading="lazy"
             />
           </div>
-          <div class="carousel-slide">
+          <div class="oda-slide">
             <img
               src="./images/galeri/galeri4.webp"
               alt="Apart Dış Görünüm 6"
@@ -238,15 +239,15 @@
             />
           </div>
         </div>
-        <button class="carousel-btn next">❯</button>
-      </div>
-      <div class="carousel-dots">
-        <span class="dot" data-slide="0"></span>
-        <span class="dot" data-slide="1"></span>
-        <span class="dot" data-slide="2"></span>
-        <span class="dot" data-slide="3"></span>
-        <span class="dot" data-slide="4"></span>
-        <span class="dot" data-slide="5"></span>
+        <button class="oda-btn next galeri-next">❯</button>
+        <div class="oda-dots galeri-dots">
+          <span class="dot" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+          <span class="dot" data-slide="4"></span>
+          <span class="dot" data-slide="5"></span>
+        </div>
       </div>
     </section>
 
@@ -713,6 +714,12 @@
 
       initOdaSlider(".tek-track", ".tek-prev", ".tek-next", ".tek-dots");
       initOdaSlider(".cift-track", ".cift-prev", ".cift-next", ".cift-dots");
+      initOdaSlider(
+        ".galeri-track",
+        ".galeri-prev",
+        ".galeri-next",
+        ".galeri-dots"
+      );
     </script>
 
     <!-- ===== Navbar Scroll Script ===== -->

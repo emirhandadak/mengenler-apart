@@ -720,3 +720,91 @@ footer a:hover {
   display: flex;
   justify-content: center;
 }
+
+/* -----------------------------------
+   GALERİ SLIDER (Galeri Bölümü)
+----------------------------------- */
+.galeri-track {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.galeri-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.galeri-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeri-slide img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3);
+}
+
+.galeri-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #2e3a40;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.galeri-btn:hover {
+  background-color: #4db6ac;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.galeri-btn.prev {
+  left: 10px;
+}
+
+.galeri-btn.next {
+  right: 10px;
+}
+
+.galeri-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.galeri-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.galeri-dots .dot:hover {
+  background-color: #4db6ac;
+  transform: scale(1.1);
+}
+
+.galeri-dots .active-dot {
+  background-color: #2e3a40;
+}
