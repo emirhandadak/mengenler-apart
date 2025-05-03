@@ -11,8 +11,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(to bottom, #e5e5e5, #ffffff);
-  color: #2c2c2c;
+  background: #1f1f1f;
+  color: #f0f0f0;
   line-height: 1.6;
 }
 
@@ -39,12 +39,12 @@ h5,
 h6 {
   font-weight: 500;
   line-height: 1.3;
-  color: #1a1a1a;
+  color: #f0f0f0;
 }
 
 p {
   font-size: 16px;
-  color: #2c2c2c;
+  color: #f0f0f0;
 }
 
 @media (max-width: 768px) {
@@ -65,12 +65,12 @@ p {
    NAVIGATION (Navbar + Sticky)
 ----------------------------------- */
 .navbar {
-  background-color: #f0f0f0;
+  background-color: #2c2c2c;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #444;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -81,7 +81,7 @@ p {
 
 .logo {
   font-size: 24px;
-  color: #2c2c2c;
+  color: #f0f0f0;
 }
 
 .nav-links {
@@ -92,12 +92,12 @@ p {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #f0f0f0;
   font-weight: 600;
 }
 
 .nav-links a:hover {
-  color: #000;
+  color: #ffffff;
 }
 
 /* -----------------------------------
@@ -137,8 +137,8 @@ p {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 24px;
-  background-color: #a5d6a7;
-  color: #1a1a1a;
+  background-color: #3a3a3a;
+  color: #f0f0f0;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
@@ -162,7 +162,7 @@ p {
 }
 
 .content-section h2 {
-  color: #1a1a1a;
+  color: #f0f0f0;
   margin-bottom: 20px;
 }
 
@@ -205,9 +205,9 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
   border: none;
-  color: #2e3a40;
+  color: #f0f0f0;
   font-size: 32px;
   font-weight: bold;
   cursor: pointer;
@@ -242,7 +242,7 @@ p {
 }
 
 .oda h3 {
-  color: #1a1a1a;
+  color: #f0f0f0;
   margin-bottom: 10px;
   font-size: 24px;
 }
@@ -252,7 +252,7 @@ p {
   margin: 0 auto 15px;
   font-size: 16px;
   line-height: 1.5;
-  color: #444;
+  color: #f0f0f0;
 }
 
 .oda-carousel {
@@ -295,9 +295,9 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
   border: none;
-  color: #2e3a40;
+  color: #f0f0f0;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
@@ -332,11 +332,11 @@ img[loading="lazy"] {
 ----------------------------------- */
 footer {
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: #2c2c2c;
   padding: 20px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #444;
   margin-top: 40px;
-  color: #333;
+  color: #f0f0f0;
 }
 
 /* -----------------------------------
@@ -345,8 +345,8 @@ footer {
 .button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #4db6ac;
-  color: #fff;
+  background-color: #3a3a3a;
+  color: #f0f0f0;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
@@ -355,16 +355,17 @@ footer {
 }
 
 .button:hover {
-  background-color: #2e3a40;
-  transform: translateY(-3px);
+  background: linear-gradient(to right, #4db6ac, #2e3a40);
+  color: #fff;
+  transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 105, 92, 0.3);
 }
 
 .call-button {
   display: inline-block;
   margin-top: 15px;
-  background-color: #4db6ac;
-  color: white;
+  background-color: #3a3a3a;
+  color: #f0f0f0;
   padding: 12px 20px;
   text-decoration: none;
   font-weight: 600;
@@ -435,7 +436,7 @@ footer {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #666;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -463,7 +464,7 @@ footer {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #666;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -612,11 +613,11 @@ footer a:hover {
    HIGHLIGHT BOX (Avantajlarımız)
 ----------------------------------- */
 .highlight-box {
-  background-color: #ffffff;
+  background-color: #2c2c2c;
   padding: 20px;
   margin-top: 20px;
   border-radius: 20px;
-  border: 4px solid #4db6ac;
+  border: 4px solid #555;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -633,8 +634,8 @@ footer a:hover {
 }
 
 .oda-etiket span {
-  background-color: #4db6ac;
-  color: white;
+  background-color: #555;
+  color: #f0f0f0;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 14px;
@@ -656,7 +657,7 @@ footer a:hover {
 .footer-copy {
   margin-top: 10px;
   font-size: 14px;
-  color: #666;
+  color: #f0f0f0;
 }
 
 @media (max-width: 768px) {
@@ -669,26 +670,29 @@ footer a:hover {
    CONTACT CARD
 ----------------------------------- */
 .contact-card {
-  background-color: #fff;
+  background-color: #2c2c2c;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   max-width: 600px;
   margin: auto;
   text-align: center;
-  border: 4px solid #4db6ac;
+  border: 4px solid #555;
+  color: #f0f0f0;
 }
 
 /* -----------------------------------
    MAP WRAPPER
 ----------------------------------- */
 .map-wrapper {
-  background-color: #fff;
+  background-color: #2c2c2c;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   max-width: 800px;
   margin: auto;
+  border: 1px solid #555;
+  color: #f0f0f0;
 }
 
 /* -----------------------------------
@@ -703,7 +707,7 @@ footer a:hover {
 
 .social-media a {
   font-size: 28px;
-  color: #4db6ac;
+  color: #f0f0f0;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -757,9 +761,9 @@ footer a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
   border: none;
-  color: #2e3a40;
+  color: #f0f0f0;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
@@ -795,7 +799,7 @@ footer a:hover {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #666;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
