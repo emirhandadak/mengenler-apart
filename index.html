@@ -701,41 +701,30 @@
     <!-- ===== Gezilecek Yerler ===== -->
     <section class="content-section reveal-on-scroll">
       <h2>🏛️ Tarih ve Doğayla İç İçe Rotalar</h2>
-      <div class="highlight-box">
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 15px; margin-bottom: 20px;">
-          <img src="./images/bolgeler/stratonikeia.webp" alt="Stratonikeia Antik Kenti" style="width: 180px; border-radius: 8px;" />
-          <div>
-            <h4 style="margin: 0;">Stratonikeia Antik Kenti</h4>
-            <p style="margin: 5px 0;">35 km (🚗 40 dk)</p>
-            <p style="margin: 0;">Tarihi Roma yolları ve taş mimarisiyle büyüleyici bir antik kent.</p>
-          </div>
+      <div class="tatil-grid">
+        <div class="tatil-card">
+          <img src="./images/bolgeler/stratonikeia.webp" alt="Stratonikeia Antik Kenti" />
+          <h4>Stratonikeia Antik Kenti</h4>
+          <p>35 km (🚗 40 dk)</p>
+          <p>Tarihi Roma yolları ve taş mimarisiyle büyüleyici bir antik kent.</p>
         </div>
-
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 15px; margin-bottom: 20px;">
-          <img src="./images/bolgeler/lagina.webp" alt="Yatağan Laginas Tapınağı" style="width: 180px; border-radius: 8px;" />
-          <div>
-            <h4 style="margin: 0;">Yatağan Laginas Tapınağı</h4>
-            <p style="margin: 5px 0;">40 km (🚗 45 dk)</p>
-            <p style="margin: 0;">Antik tanrıça Hekate’ye adanmış etkileyici kalıntılar.</p>
-          </div>
+        <div class="tatil-card">
+          <img src="./images/bolgeler/lagina.webp" alt="Yatağan Laginas Tapınağı" />
+          <h4>Yatağan Laginas Tapınağı</h4>
+          <p>40 km (🚗 45 dk)</p>
+          <p>Antik tanrıça Hekate’ye adanmış etkileyici kalıntılar.</p>
         </div>
-
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 15px; margin-bottom: 20px;">
-          <img src="./images/bolgeler/sehirmerkezi.webp" alt="Muğla Şehir Merkezi" style="width: 180px; border-radius: 8px;" />
-          <div>
-            <h4 style="margin: 0;">Muğla Şehir Merkezi</h4>
-            <p style="margin: 5px 0;">4 km (🚗 8 dk / 🚶 20 dk)</p>
-            <p style="margin: 0;">Tarihi sokaklar, yerel lezzetler ve alışverişin merkezi.</p>
-          </div>
+        <div class="tatil-card">
+          <img src="./images/bolgeler/sehirmerkezi.webp" alt="Muğla Şehir Merkezi" />
+          <h4>Muğla Şehir Merkezi</h4>
+          <p>4 km (🚗 8 dk / 🚶 20 dk)</p>
+          <p>Tarihi sokaklar, yerel lezzetler ve alışverişin merkezi.</p>
         </div>
-
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 15px;">
-          <img src="./images/bolgeler/ulagole.webp" alt="Ula Göleti" style="width: 180px; border-radius: 8px;" />
-          <div>
-            <h4 style="margin: 0;">Ula Göleti</h4>
-            <p style="margin: 5px 0;">18 km (🚗 25 dk)</p>
-            <p style="margin: 0;">Doğa ile baş başa piknik ve yürüyüş keyfi.</p>
-          </div>
+        <div class="tatil-card">
+          <img src="./images/bolgeler/ulagole.webp" alt="Ula Göleti" />
+          <h4>Ula Göleti</h4>
+          <p>18 km (🚗 25 dk)</p>
+          <p>Doğa ile baş başa piknik ve yürüyüş keyfi.</p>
         </div>
       </div>
     </section>
@@ -743,7 +732,7 @@
     <!-- ===== Konum ===== -->
     <section id="konum" class="content-section reveal-on-scroll">
       <h2>Konum</h2>
-      <p>Apartımızın konumunu harita üzerinden görebilirsiniz:</p>
+      <p class="map-description">Apartımızın konumunu harita üzerinden görebilirsiniz:</p>
       <div class="map-wrapper">
         <iframe
           src="https://www.google.com/maps?q=37.21705697087649,28.36235494232837&z=16&output=embed"
@@ -756,14 +745,15 @@
         >
         </iframe>
       </div>
-      <a
-        href="https://www.google.com/maps/dir/?api=1&destination=37.217056,28.362361"
-        target="_blank"
-        class="button"
-        style="margin-top: 20px; display: inline-block;"
-      >
-        📍 Yol Tarifi Al
-      </a>
+      <div class="yol-tarifi-button">
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=37.217056,28.362361"
+          target="_blank"
+          class="button"
+        >
+          📍 Yol Tarifi Al
+        </a>
+      </div>
     </section>
 
     <!-- ===== Footer ===== -->
@@ -1008,7 +998,7 @@
       const closeModal = document.querySelector(".close-modal");
 
       document
-        .querySelectorAll(".carousel-track img, .oda-track img")
+        .querySelectorAll(".carousel-track img, .oda-track img, .tatil-card img, .highlight-box img")
         .forEach((img) => {
           img.style.cursor = "pointer";
           img.addEventListener("click", () => {
