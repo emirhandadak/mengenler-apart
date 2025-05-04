@@ -96,8 +96,22 @@ p {
   font-weight: 600;
 }
 
-.nav-links a:hover {
-  color: #ffffff;
+.nav-links a,
+.content-section h2,
+.oda h3,
+footer a {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Teal gradient shadow effect for hovered nav links and others */
+.nav-links a:hover,
+.content-section h2:hover,
+.oda h3:hover,
+footer a:hover {
+  color: #4db6ac;
+  text-shadow: 0 0 6px rgba(77, 182, 172, 0.7);
+  transform: scale(1.03);
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
 }
 
 /* -----------------------------------
@@ -594,21 +608,6 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 105, 92, 0.3);
 }
 
-/* Menu and footer link hover sparkle */
-.nav-links a:hover,
-footer a:hover {
-  color: #4db6ac;
-  text-shadow: 0 0 6px rgba(77, 182, 172, 0.4);
-}
-
-/* Section headings and oda titles hover effect */
-.content-section h2:hover,
-.oda h3:hover {
-  color: #2e3a40;
-  transform: scale(1.03);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
 /* -----------------------------------
    HIGHLIGHT BOX (Avantajlarımız)
 ----------------------------------- */
@@ -811,4 +810,45 @@ footer a:hover {
 
 .galeri-dots .active-dot {
   background-color: #2e3a40;
+}
+
+
+/* -----------------------------------
+   TATİL BELDELERİ KART GRID
+----------------------------------- */
+.tatil-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tatil-card {
+  background: #2c2c2c;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tatil-card:hover {
+  transform: scale(1.03);
+}
+
+.tatil-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.tatil-card h4 {
+  margin: 0 0 5px 0;
+  color: #f0f0f0;
+}
+
+.tatil-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
 }
