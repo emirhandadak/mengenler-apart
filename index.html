@@ -73,12 +73,7 @@
     </header>
 
     <!-- ===== Hero Section ===== -->
-    <section
-      class="hero-slider"
-      style="
-        background: url('./images/hero-mengenler.png') center/cover no-repeat;
-      "
-    >
+    <section class="hero-slider default-bg">
       <div class="hero-slide active">
         <h2>
           Konaklamanızda Ev Rahatlığı Arıyorsanız, Mengenler Apart’ta Yeriniz
@@ -190,7 +185,7 @@
           </div>
         </div>
         <button class="slider-btn next galeri-next">❯</button>
-        <div class="oda-dots galeri-dots">
+        <div class="slider-dots galeri-dots">
           <span class="dot" data-slide="0"></span>
           <span class="dot" data-slide="1"></span>
           <span class="dot" data-slide="2"></span>
@@ -432,7 +427,7 @@
             </div>
           </div>
           <button class="slider-btn next tek-next">❯</button>
-          <div class="oda-dots tek-dots">
+          <div class="slider-dots tek-dots">
             <span class="dot" data-slide="0"></span>
             <span class="dot" data-slide="1"></span>
             <span class="dot" data-slide="2"></span>
@@ -529,7 +524,7 @@
             </div>
           </div>
           <button class="slider-btn next cift-next">❯</button>
-          <div class="oda-dots cift-dots">
+          <div class="slider-dots cift-dots">
             <span class="dot" data-slide="0"></span>
             <span class="dot" data-slide="1"></span>
             <span class="dot" data-slide="2"></span>
@@ -647,52 +642,7 @@
         </div>
       </div>
     </section>
-
-    <!-- ===== Gerekli CSS ===== -->
-    <style>
-      .tatil-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 20px;
-        margin-top: 20px;
-      }
-
-      .tatil-card {
-        background: #1e1e1e;
-        padding: 15px;
-        border-radius: 12px;
-        text-align: center;
-        transition: transform 0.3s ease;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      }
-
-      .tatil-card:hover {
-        transform: scale(1.03);
-      }
-
-      .tatil-card img {
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 10px;
-      }
-
-      .tatil-card h4 {
-        margin: 0 0 5px 0;
-      }
-
-      .tatil-card p {
-        margin: 5px 0;
-        font-size: 14px;
-        color: #ccc;
-      }
-      /* Galeri ve oda slide'larında caption hover efekti */
-      .oda-slide:hover .caption,
-      .galeri-slide:hover .caption {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    </style>
-
+    
     <!-- ===== Ulaşım Bilgileri ===== -->
     <section class="content-section reveal-on-scroll">
       <h2>🛫 Şehir Otogarı ve Havalimanı</h2>
@@ -778,6 +728,7 @@
           href="https://www.google.com/maps/dir/?api=1&destination=37.217056,28.362361"
           target="_blank"
           class="button"
+          rel="noopener noreferrer"
         >
           📍 Yol Tarifi Al
         </a>
@@ -794,6 +745,7 @@
           href="https://www.instagram.com/mengenler.apart?igsh=MTc3N295NGg1ejdkdg=="
           target="_blank"
           aria-label="Instagram"
+          rel="noopener noreferrer"
         >
           <i class="fab fa-instagram"></i>
         </a>
@@ -801,6 +753,7 @@
           href="https://wa.me/905333436604"
           target="_blank"
           aria-label="WhatsApp"
+          rel="noopener noreferrer"
         >
           <i class="fab fa-whatsapp"></i>
         </a>
