@@ -28,6 +28,11 @@
       content="https://emirhandadak.github.io/mengenler-apart/"
     />
     <meta property="og:type" content="website" />
+    <meta http-equiv="Content-Language" content="tr" />
+    <meta name="theme-color" content="#1f1f1f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="manifest" href="manifest.json" />
     <title>Mengenler Apart | Muğla Apart Daire</title>
 
     <!-- ===== Fonts ===== -->
@@ -41,79 +46,6 @@
 
     <!-- ===== Styles ===== -->
     <link rel="stylesheet" href="style.css" />
-    <style>
-      .whatsapp-float {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-        background-color: transparent;
-        border-radius: 50%;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        transition: transform 0.3s ease;
-      }
-
-      .whatsapp-float:hover {
-        transform: scale(1.1);
-      }
-
-      .call-button {
-        display: inline-block;
-        margin-top: 15px;
-        background-color: #4db6ac;
-        color: white;
-        padding: 12px 20px;
-        text-decoration: none;
-        font-weight: 600;
-        border-radius: 8px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      }
-
-      .call-button:hover {
-        background-color: #00695c;
-        transform: scale(1.05);
-      }
-
-      .modal {
-        display: none;
-        position: fixed;
-        z-index: 1001;
-        padding-top: 60px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.95);
-      }
-
-      .modal-content {
-        margin: auto;
-        display: block;
-        max-width: 90%;
-        max-height: 80%;
-        animation: zoomIn 0.3s;
-      }
-
-      .close-modal {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        color: white;
-        font-size: 40px;
-        font-weight: bold;
-        cursor: pointer;
-      }
-
-      @keyframes zoomIn {
-        from {
-          transform: scale(0.5);
-        }
-        to {
-          transform: scale(1);
-        }
-      }
-    </style>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -194,52 +126,70 @@
     <section id="galeri" class="content-section reveal-on-scroll">
       <h2>Galeri</h2>
       <div class="oda-carousel">
-        <button class="oda-btn prev galeri-prev">❮</button>
+        <button class="slider-btn prev galeri-prev">❮</button>
         <div class="oda-track galeri-track">
           <div class="oda-slide">
             <img
               src="./images/galeri/galeri3.webp"
               alt="Apart Dış Görünüm 1"
               loading="lazy"
+              width="800"
+              height="600"
             />
+            <div class="caption">Apart Dış Görünüm 1</div>
           </div>
           <div class="oda-slide">
             <img
               src="./images/galeri/galeri5.webp"
               alt="Apart Dış Görünüm 2"
               loading="lazy"
+              width="800"
+              height="600"
             />
+            <div class="caption">Apart Dış Görünüm 2</div>
           </div>
           <div class="oda-slide">
             <img
               src="./images/galeri/galeri8.webp"
               alt="Apart Dış Görünüm 3"
               loading="lazy"
+              width="800"
+              height="600"
             />
+            <div class="caption">Apart Dış Görünüm 3</div>
           </div>
           <div class="oda-slide">
             <img
               src="./images/galeri/galeri6.webp"
               alt="Apart Dış Görünüm 4"
               loading="lazy"
+              width="800"
+              height="600"
             />
+            <div class="caption">Apart Dış Görünüm 4</div>
           </div>
           <div class="oda-slide">
             <img
               src="./images/galeri/galeri7.webp"
               alt="Apart Dış Görünüm 5"
               loading="lazy"
+              width="800"
+              height="600"
             />
+            <div class="caption">Apart Dış Görünüm 5</div>
           </div>
           <div class="oda-slide">
             <img
               src="./images/galeri/galeri4.webp"
               alt="Apart Dış Görünüm 6"
               loading="lazy"
+              width="800"
+              height="600"
             />
+            <div class="caption">Apart Dış Görünüm 6</div>
           </div>
         </div>
-        <button class="oda-btn next galeri-next">❯</button>
+        <button class="slider-btn next galeri-next">❯</button>
         <div class="oda-dots galeri-dots">
           <span class="dot" data-slide="0"></span>
           <span class="dot" data-slide="1"></span>
@@ -288,143 +238,200 @@
             <span>🚿 Sıcak Su</span>
             <span>🧺 Çamaşır Makinesi</span>
           </div>
-          <button class="oda-btn prev tek-prev">❮</button>
+          <button class="slider-btn prev tek-prev">❮</button>
           <div class="oda-track tek-track">
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/a3.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Yatak Alanı"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Yatak Alanı</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/a1.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Genel Görünüm"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Genel Görünüm</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/a6.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Mutfak Detayı"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Mutfak Detayı</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/a7.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Oturma Alanı"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Oturma Alanı</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/b1.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Dolap ve Yatak"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Dolap ve Yatak</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/b3.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Çalışma Masası"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Çalışma Masası</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/b4.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Banyo"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Banyo</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/b5.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Koridor"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Koridor</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/b6.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Balkon"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Balkon</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/b9.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Gece Aydınlatması"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Gece Aydınlatması</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/b11.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Detaylı Yatak Alanı"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Detaylı Yatak Alanı</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/b12.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Aydınlık Pencere"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Aydınlık Pencere</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/b13.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Geniş Açı"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Geniş Açı</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/balkon.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Açık Mutfak"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Açık Mutfak</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/c1.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Balkon Kapısı"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Balkon Kapısı</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/c3.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Pencere Detayı"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Pencere Detayı</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/c4.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Genel Perspektif"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Genel Perspektif</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/c5.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Eşyalarla Detay"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Eşyalarla Detay</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/tekkisilik/c6.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="Stüdyo Oda - Eşyalarla Detay"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">Stüdyo Oda - Eşyalarla Detay</div>
             </div>
           </div>
-          <button class="oda-btn next tek-next">❯</button>
+          <button class="slider-btn next tek-next">❯</button>
           <div class="oda-dots tek-dots">
             <span class="dot" data-slide="0"></span>
             <span class="dot" data-slide="1"></span>
@@ -468,45 +475,60 @@
             <span>🚿 Sıcak Su</span>
             <span>🧺 Çamaşır Makinesi</span>
           </div>
-          <button class="oda-btn prev cift-prev">❮</button>
+          <button class="slider-btn prev cift-prev">❮</button>
           <div class="oda-track cift-track">
             <div class="oda-slide">
               <img
                 src="./images/ciftkisilik/cift1.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="2+1 Daire - Salon ve Oturma Alanı"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">2+1 Daire - Salon ve Oturma Alanı</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/ciftkisilik/cift2.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="2+1 Daire - Mutfak ve Tezgah"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">2+1 Daire - Mutfak ve Tezgah</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/ciftkisilik/cift3.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="2+1 Daire - Yatak Odası"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">2+1 Daire - Yatak Odası</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/ciftkisilik/cift4.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="2+1 Daire - Balkon ve Manzara"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">2+1 Daire - Balkon ve Manzara</div>
             </div>
             <div class="oda-slide">
               <img
                 src="./images/ciftkisilik/cift5.webp"
-                alt="Tek Kişilik Oda Görünüm 1"
+                alt="2+1 Daire - Banyo ve Duş"
                 loading="lazy"
+                width="800"
+                height="600"
               />
+              <div class="caption">2+1 Daire - Banyo ve Duş</div>
             </div>
           </div>
-          <button class="oda-btn next cift-next">❯</button>
+          <button class="slider-btn next cift-next">❯</button>
           <div class="oda-dots cift-dots">
             <span class="dot" data-slide="0"></span>
             <span class="dot" data-slide="1"></span>
@@ -663,6 +685,12 @@
         font-size: 14px;
         color: #ccc;
       }
+      /* Galeri ve oda slide'larında caption hover efekti */
+      .oda-slide:hover .caption,
+      .galeri-slide:hover .caption {
+        opacity: 1;
+        transform: translateY(0);
+      }
     </style>
 
     <!-- ===== Ulaşım Bilgileri ===== -->
@@ -789,8 +817,8 @@
     <script>
       const track = document.querySelector(".carousel-track");
       // Removed static slides definition
-      const prevBtn = document.querySelector(".carousel-btn.prev");
-      const nextBtn = document.querySelector(".carousel-btn.next");
+      const prevBtn = document.querySelector(".slider-btn.prev");
+      const nextBtn = document.querySelector(".slider-btn.next");
       let currentSlide = 0;
 
       function updateCarousel() {
@@ -1030,6 +1058,21 @@
         });
       });
     </script>
+    <script>
+      // IntersectionObserver for h2, h3 headings to add .revealed class
+      const headingObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            headingObserver.unobserve(entry.target);
+          }
+        });
+      });
+
+      document.querySelectorAll("h2, h3").forEach((el) => {
+        headingObserver.observe(el);
+      });
+    </script>
     <a
       href="https://wa.me/905333436604"
       class="whatsapp-float"
@@ -1043,5 +1086,6 @@
         height="48"
       />
     </a>
+    <a href="#top" class="back-to-top">↑</a>
   </body>
 </html>

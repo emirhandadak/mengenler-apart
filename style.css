@@ -1,4 +1,17 @@
 /* -----------------------------------
+   CSS VARIABLES
+----------------------------------- */
+:root {
+  --color-bg-dark: #1f1f1f;
+  --color-text-light: #f0f0f0;
+  --color-accent: #4db6ac;
+  --color-accent-light: #00ffc8;
+  --radius-small: 8px;
+  --radius-medium: 10px;
+  --radius-large: 12px;
+  --transition-fast: 0.3s ease;
+}
+/* -----------------------------------
    MAP DESCRIPTION (Harita Açıklaması)
 ----------------------------------- */
 .map-description {
@@ -16,10 +29,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background: #1f1f1f;
-  color: #f0f0f0;
+  background: var(--color-bg-dark);
+  color: var(--color-text-light);
   line-height: 1.6;
 }
 
@@ -46,12 +63,12 @@ h5,
 h6 {
   font-weight: 500;
   line-height: 1.3;
-  color: #f0f0f0;
+  color: var(--color-text-light);
 }
 
 p {
   font-size: 16px;
-  color: #f0f0f0;
+  color: var(--color-text-light);
 }
 
 @media (max-width: 768px) {
@@ -88,7 +105,7 @@ p {
 
 .logo {
   font-size: 24px;
-  color: #f0f0f0;
+  color: var(--color-text-light);
 }
 
 .nav-links {
@@ -99,7 +116,7 @@ p {
 
 .nav-links a {
   text-decoration: none;
-  color: #f0f0f0;
+  color: var(--color-text-light);
   font-weight: 600;
 }
 
@@ -107,7 +124,7 @@ p {
 .content-section h2,
 .oda h3,
 footer a {
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition: color var(--transition-fast), text-shadow var(--transition-fast);
 }
 
 /* Teal gradient shadow effect for hovered nav links and others */
@@ -115,10 +132,10 @@ footer a {
 .content-section h2:hover,
 .oda h3:hover,
 footer a:hover {
-  color: #4db6ac;
+  color: var(--color-accent);
   text-shadow: 0 0 6px rgba(77, 182, 172, 0.7);
   transform: scale(1.03);
-  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+  transition: color var(--transition-fast), text-shadow var(--transition-fast), transform var(--transition-fast);
 }
 
 /* -----------------------------------
@@ -183,7 +200,7 @@ footer a:hover {
 }
 
 .content-section h2 {
-  color: #f0f0f0;
+  color: var(--color-text-light);
   margin-bottom: 20px;
 }
 
@@ -212,9 +229,9 @@ footer a:hover {
   height: auto;
   max-height: 400px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: var(--radius-medium);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .carousel-slide img:hover {
@@ -222,39 +239,6 @@ footer a:hover {
   box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3);
 }
 
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: #f0f0f0;
-  font-size: 32px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 10px 16px;
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.carousel-btn:hover {
-  background-color: #4db6ac;
-  color: white;
-  transform: translateY(-50%) scale(1.1);
-}
-
-.carousel-btn.prev {
-  left: 10px;
-}
-
-.carousel-btn.next {
-  right: 10px;
-}
 
 /* Odalar Bölümü */
 .oda {
@@ -263,7 +247,7 @@ footer a:hover {
 }
 
 .oda h3 {
-  color: #f0f0f0;
+  color: var(--color-text-light);
   margin-bottom: 10px;
   font-size: 24px;
 }
@@ -273,7 +257,7 @@ footer a:hover {
   margin: 0 auto 15px;
   font-size: 16px;
   line-height: 1.5;
-  color: #f0f0f0;
+  color: var(--color-text-light);
 }
 
 .oda-carousel {
@@ -304,7 +288,7 @@ footer a:hover {
   height: auto;
   max-height: 400px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: var(--radius-medium);
 }
 
 .oda-slide img:hover {
@@ -312,40 +296,10 @@ footer a:hover {
   box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3);
 }
 
-.oda-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: #f0f0f0;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-  transition: all 0.3s ease;
-}
-
-.oda-btn:hover {
-  background-color: #4db6ac;
-  color: white;
-  transform: translateY(-50%) scale(1.1);
-}
-
-.oda-btn.prev {
-  left: 10px;
-}
-
-.oda-btn.next {
-  right: 10px;
-}
 
 img[loading="lazy"] {
-  background-color: #f0f0f0;
-  transition: opacity 0.3s ease;
+  background-color: var(--color-text-light);
+  transition: opacity var(--transition-fast);
 }
 
 /* -----------------------------------
@@ -357,7 +311,7 @@ footer {
   padding: 20px;
   border-top: 1px solid #444;
   margin-top: 40px;
-  color: #f0f0f0;
+  color: var(--color-text-light);
 }
 
 /* -----------------------------------
@@ -367,41 +321,37 @@ footer {
   display: inline-block;
   padding: 12px 24px;
   background-color: #2c2c2c;
-  color: #4db6ac;
+  color: var(--color-accent);
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: var(--radius-small);
   font-weight: 600;
-  transition: all 0.3s ease;
-  border: 1px solid #4db6ac;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--color-accent);
   box-shadow: 0 4px 12px rgba(77, 182, 172, 0.1);
 }
 
-.button:hover {
-  background-color: #4db6ac;
-  color: #1f1f1f;
+/* Enhanced button hover effect */
+.button:hover,
+.call-button:hover {
+  background-color: var(--color-accent-light);
+  color: var(--color-bg-dark);
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(77, 182, 172, 0.3);
+  box-shadow: 0 0 12px rgba(0, 255, 200, 0.6);
 }
 
 .call-button {
   display: inline-block;
   padding: 12px 24px;
   background-color: #2c2c2c;
-  color: #4db6ac;
+  color: var(--color-accent);
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: var(--radius-small);
   font-weight: 600;
-  transition: all 0.3s ease;
-  border: 1px solid #4db6ac;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--color-accent);
   box-shadow: 0 4px 12px rgba(77, 182, 172, 0.1);
 }
 
-.call-button:hover {
-  background-color: #4db6ac;
-  color: #1f1f1f;
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(77, 182, 172, 0.3);
-}
 
 /* -----------------------------------
    ANIMATIONS
@@ -463,11 +413,11 @@ footer {
   border-radius: 50%;
   background-color: #666;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .carousel-dots .dot:hover {
-  background-color: #4db6ac;
+  background-color: var(--color-accent);
   transform: scale(1.1);
 }
 
@@ -491,11 +441,11 @@ footer {
   border-radius: 50%;
   background-color: #666;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .oda-dots .dot:hover {
-  background-color: #4db6ac;
+  background-color: var(--color-accent);
   transform: scale(1.1);
 }
 
@@ -543,7 +493,7 @@ footer {
 
   /* Content Section Text */
   .content-section {
-    padding: 50px 16px;
+    padding: 60px 20px;
   }
 
   .content-section h2 {
@@ -554,7 +504,8 @@ footer {
   /* Gallery and Room Sliders */
   .carousel-track img,
   .oda-track img {
-    width: 90%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: auto;
   }
@@ -599,11 +550,12 @@ footer {
   }
 
   .carousel-slide img {
-    width: 90%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: auto;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: var(--radius-medium);
   }
 }
 
@@ -640,7 +592,7 @@ footer {
 
 .oda-etiket span {
   background-color: #555;
-  color: #f0f0f0;
+  color: var(--color-text-light);
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 14px;
@@ -662,7 +614,7 @@ footer {
 .footer-copy {
   margin-top: 10px;
   font-size: 14px;
-  color: #f0f0f0;
+  color: var(--color-text-light);
 }
 
 @media (max-width: 768px) {
@@ -683,7 +635,7 @@ footer {
   margin: auto;
   text-align: center;
   border: 4px solid #555;
-  color: #f0f0f0;
+  color: var(--color-text-light);
 }
 
 /* -----------------------------------
@@ -692,12 +644,12 @@ footer {
 .map-wrapper {
   background-color: #2c2c2c;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: var(--radius-large);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   max-width: 800px;
   margin: auto;
   border: 1px solid #555;
-  color: #f0f0f0;
+  color: var(--color-text-light);
 }
 
 /* -----------------------------------
@@ -712,8 +664,8 @@ footer {
 
 .social-media a {
   font-size: 28px;
-  color: #f0f0f0;
-  transition: transform 0.3s ease, color 0.3s ease;
+  color: var(--color-text-light);
+  transition: transform var(--transition-fast), color var(--transition-fast);
 }
 
 .social-media a:hover {
@@ -753,8 +705,8 @@ footer {
   height: auto;
   max-height: 400px;
   object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: var(--radius-medium);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .galeri-slide img:hover {
@@ -762,36 +714,6 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3);
 }
 
-.galeri-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: #f0f0f0;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-  transition: all 0.3s ease;
-}
-
-.galeri-btn:hover {
-  background-color: #4db6ac;
-  color: white;
-  transform: translateY(-50%) scale(1.1);
-}
-
-.galeri-btn.prev {
-  left: 10px;
-}
-
-.galeri-btn.next {
-  right: 10px;
-}
 
 .galeri-dots {
   display: flex;
@@ -806,11 +728,11 @@ footer {
   border-radius: 50%;
   background-color: #666;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .galeri-dots .dot:hover {
-  background-color: #4db6ac;
+  background-color: var(--color-accent);
   transform: scale(1.1);
 }
 
@@ -832,9 +754,9 @@ footer {
 .tatil-card {
   background: #2e2e2e;
   padding: 15px;
-  border-radius: 12px;
+  border-radius: var(--radius-large);
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform var(--transition-fast);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border: 1px solid #444;
 }
@@ -845,19 +767,19 @@ footer {
 
 .tatil-card img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: var(--radius-medium);
   margin-bottom: 10px;
 }
 
 .tatil-card h4 {
   margin: 0 0 5px 0;
-  color: #f0f0f0;
+  color: var(--color-text-light);
 }
 
 .tatil-card p {
   margin: 5px 0;
   font-size: 14px;
-  color: #f0f0f0;
+  color: var(--color-text-light);
 }
 /* -----------------------------------
    YOL TARİFİ AL BUTTON
@@ -866,4 +788,111 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--color-accent);
+  color: var(--color-bg-dark);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 255, 200, 0.4);
+  z-index: 1000;
+  transition: transform var(--transition-fast);
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  transform: scale(1.2);
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--color-text-light);
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-btn:hover {
+  background-color: var(--color-accent);
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+.nav-links a {
+  transition: all var(--transition-fast);
+}
+
+/* H2 ve H3 başlıklara scroll görünüm efekti */
+.content-section h2,
+.oda h3 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.content-section h2.revealed,
+.oda h3.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Görseller hover'da zoom + glow */
+.carousel-slide img:hover,
+.oda-slide img:hover,
+.galeri-slide img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 12px 24px rgba(0, 255, 200, 0.2);
+}
+
+
+/* -----------------------------------
+   ODA SLIDE CAPTION STYLES
+----------------------------------- */
+.caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--color-text-light);
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all var(--transition-fast);
+  border-bottom-left-radius: var(--radius-medium);
+  border-bottom-right-radius: var(--radius-medium);
+}
+
+.oda-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.oda-slide:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -1,0 +1,17 @@
+
+
+{
+  "name": "Mengenler Apart",
+  "short_name": "Mengenler",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1f1f1f",
+  "theme_color": "#4db6ac",
+  "icons": [
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
