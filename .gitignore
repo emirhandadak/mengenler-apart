@@ -1,1 +1,12 @@
+# macOS sistem dosyası
 .DS_Store
+
+# IDE klasörleri
+.vscode/
+.idea/
+
+# Node.js projeleri için örnek
+node_modules/
+
+# Log dosyaları
+*.log
