@@ -80,5 +80,3 @@ mengenler-apart/
 
 ---
 
-> “Her satırında öğrenme, her commit’te gelişim var.”  
-> — **Emirhan Dadak**
