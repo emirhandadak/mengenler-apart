@@ -1,6 +1,4 @@
-/* -----------------------------------
-   CSS VARIABLES
------------------------------------ */
+/* Tema renkleri, radius değerleri ve animasyon hızları */
 :root {
   --color-bg-dark: #1f1f1f;
   --color-text-light: #f0f0f0;
@@ -11,18 +9,15 @@
   --radius-large: 12px;
   --transition-fast: 0.3s ease;
 }
-/* -----------------------------------
-   MAP DESCRIPTION (Harita Açıklaması)
------------------------------------ */
+
 .map-description {
   margin-bottom: 20px;
 }
 
+/* Poppins fontu Google'dan import ediliyor */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
-/* -----------------------------------
-   GLOBAL SETTINGS
------------------------------------ */
+/* Tüm öğeler için varsayılan margin ve padding sıfırlanıyor */
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +39,7 @@ body.menu-open {
   overflow: hidden;
 }
 
+/* Menü açıldığında ekranın üstünü kaplayan karartma efekti */
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -85,9 +81,7 @@ p {
   }
 }
 
-/* -----------------------------------
-   NAVIGATION (Navbar + Sticky)
------------------------------------ */
+/* Üst sabit navigasyon barı */
 .navbar {
   background-color: #2c2c2c;
   padding: 20px;
@@ -127,7 +121,6 @@ footer a {
   transition: color var(--transition-fast), text-shadow var(--transition-fast);
 }
 
-/* Teal gradient shadow effect for hovered nav links and others */
 .nav-links a:hover,
 .content-section h2:hover,
 .oda h3:hover,
@@ -135,12 +128,11 @@ footer a:hover {
   color: var(--color-accent);
   text-shadow: 0 0 6px rgba(77, 182, 172, 0.7);
   transform: scale(1.03);
-  transition: color var(--transition-fast), text-shadow var(--transition-fast), transform var(--transition-fast);
+  transition: color var(--transition-fast), text-shadow var(--transition-fast),
+    transform var(--transition-fast);
 }
 
-/* -----------------------------------
-   HERO SECTION
------------------------------------ */
+/* Ana sayfadaki büyük görsel slider alanı */
 .hero-slider {
   background: url("https://images.unsplash.com/photo-1560448204-e02f11c3d0e2")
     center/cover no-repeat;
@@ -190,9 +182,7 @@ footer a:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
-/* -----------------------------------
-   CONTENT SECTIONS (Galeri, Odalar)
------------------------------------ */
+/* Sayfa bölümleri için padding ve max-width ayarı */
 .content-section {
   padding: 80px 20px;
   max-width: 1000px;
@@ -204,8 +194,8 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
-/* Galeri - Carousel */
 .carousel {
+  /* Kaydırılabilir görsel alanı */
   position: relative;
   overflow: hidden;
   max-width: 700px;
@@ -231,7 +221,8 @@ footer a:hover {
   object-fit: cover;
   border-radius: var(--radius-medium);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  transition: transform var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 .carousel-slide img:hover {
@@ -239,8 +230,7 @@ footer a:hover {
   box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3);
 }
 
-
-/* Odalar Bölümü */
+/* Oda tanıtımları için alan */
 .oda {
   margin-bottom: 40px;
   text-align: center;
@@ -296,15 +286,11 @@ footer a:hover {
   box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3);
 }
 
-
 img[loading="lazy"] {
   background-color: var(--color-text-light);
   transition: opacity var(--transition-fast);
 }
 
-/* -----------------------------------
-   FOOTER
------------------------------------ */
 footer {
   text-align: center;
   background-color: #2c2c2c;
@@ -314,9 +300,6 @@ footer {
   color: var(--color-text-light);
 }
 
-/* -----------------------------------
-   BUTTONS (Shared, Call, WhatsApp)
------------------------------------ */
 .button {
   display: inline-block;
   padding: 12px 24px;
@@ -330,7 +313,6 @@ footer {
   box-shadow: 0 4px 12px rgba(77, 182, 172, 0.1);
 }
 
-/* Enhanced button hover effect */
 .button:hover,
 .call-button:hover {
   background-color: var(--color-accent-light);
@@ -352,10 +334,6 @@ footer {
   box-shadow: 0 4px 12px rgba(77, 182, 172, 0.1);
 }
 
-
-/* -----------------------------------
-   ANIMATIONS
------------------------------------ */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -385,17 +363,7 @@ footer {
   height: 48px;
 }
 
-/* -----------------------------------
-   DOT NAVIGATION (Slider Dots)
------------------------------------ */
-
-/* -----------------------------------
-   DOT NAVIGATION (Oda Sliders)
------------------------------------ */
-
-/* -----------------------------------
-   SCROLL REVEAL ANIMATIONS
------------------------------------ */
+/* Scroll ile ortaya çıkan animasyon için başlangıç ayarları */
 .reveal-on-scroll {
   opacity: 0;
   transform: translateY(40px);
@@ -407,17 +375,12 @@ footer {
   transform: translateY(0);
 }
 
-/* -----------------------------------
-   RESPONSIVE DESIGN FOR MOBILE
------------------------------------ */
 @media (max-width: 768px) {
-  /* Navbar */
   .nav-links {
     flex-direction: column;
     gap: 15px;
   }
 
-  /* Hero Text */
   .hero-slide h2 {
     font-size: 22px;
   }
@@ -431,7 +394,6 @@ footer {
     font-size: 14px;
   }
 
-  /* Content Section Text */
   .content-section {
     padding: 60px 20px;
   }
@@ -441,7 +403,6 @@ footer {
     text-align: center;
   }
 
-  /* Gallery and Room Sliders */
   .carousel-track img,
   .oda-track img {
     width: 100%;
@@ -450,26 +411,22 @@ footer {
     margin: auto;
   }
 
-  /* Dot Navigation */
   .carousel-dots .dot,
   .oda-dots .dot {
     width: 8px;
     height: 8px;
   }
 
-  /* WhatsApp Button Positioning */
   .whatsapp-float {
     bottom: 90px;
   }
 
-  /* Call Button */
   .call-button {
     padding: 10px 18px;
     margin-top: 12px;
     font-size: 14px;
   }
 
-  /* Footer */
   footer {
     font-size: 14px;
     padding: 15px;
@@ -499,16 +456,7 @@ footer {
   }
 }
 
-/* -----------------------------------
-   MICRO INTERACTIONS & HOVER EFFECTS
------------------------------------ */
-
-/* Enhanced button hover effect */
-/* (Güncellendi: .button:hover yukarıda tanımlandı) */
-
-/* -----------------------------------
-   HIGHLIGHT BOX (Avantajlarımız)
------------------------------------ */
+/* Öne çıkan kutu tasarımı */
 .highlight-box {
   background-color: #2c2c2c;
   padding: 20px;
@@ -518,9 +466,7 @@ footer {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* -----------------------------------
-   ODA ETİKETLERİ
------------------------------------ */
+/* Oda etiketleri için düzen */
 .oda-etiket {
   display: flex;
   justify-content: center;
@@ -563,9 +509,7 @@ footer {
   }
 }
 
-/* -----------------------------------
-   CONTACT CARD
------------------------------------ */
+/* İletişim kartı tasarımı */
 .contact-card {
   background-color: #2c2c2c;
   padding: 30px;
@@ -578,9 +522,7 @@ footer {
   color: var(--color-text-light);
 }
 
-/* -----------------------------------
-   MAP WRAPPER
------------------------------------ */
+/* Harita alanı tasarımı */
 .map-wrapper {
   background-color: #2c2c2c;
   padding: 20px;
@@ -592,9 +534,7 @@ footer {
   color: var(--color-text-light);
 }
 
-/* -----------------------------------
-   SOCIAL MEDIA
------------------------------------ */
+/* Sosyal medya ikonları için düzen */
 .social-media {
   display: flex;
   justify-content: center;
@@ -613,7 +553,6 @@ footer {
   color: #2e3a40;
 }
 
-/* New carousel-slide container style */
 .carousel-slide {
   flex: 0 0 100%;
   width: 100%;
@@ -622,9 +561,6 @@ footer {
   justify-content: center;
 }
 
-/* -----------------------------------
-   GALERİ SLIDER (Galeri Bölümü)
------------------------------------ */
 .galeri-track {
   display: flex;
   flex-wrap: nowrap;
@@ -646,7 +582,8 @@ footer {
   max-height: 400px;
   object-fit: cover;
   border-radius: var(--radius-medium);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  transition: transform var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 .galeri-slide img:hover {
@@ -654,12 +591,7 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3);
 }
 
-
-
-
-/* -----------------------------------
-   TATİL BELDELERİ KART GRID
------------------------------------ */
+/* Tatil kartları için grid düzeni */
 .tatil-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -667,6 +599,7 @@ footer {
   margin-top: 20px;
 }
 
+/* Tatil kartı tasarımı */
 .tatil-card {
   background: #2e2e2e;
   padding: 15px;
@@ -699,14 +632,15 @@ footer {
   font-size: 14px;
   color: var(--color-text-light);
 }
-/* -----------------------------------
-   YOL TARİFİ AL BUTTON
------------------------------------ */
+
+/* Yol tarifi butonu için düzen */
 .yol-tarifi-button {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
+
+/* Sayfanın üstüne dön butonu */
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -725,6 +659,8 @@ footer {
 .back-to-top:hover {
   transform: scale(1.2);
 }
+
+/* Slider butonları için stil */
 .slider-btn {
   position: absolute;
   top: 50%;
@@ -763,7 +699,6 @@ footer {
   transition: all var(--transition-fast);
 }
 
-/* H2 ve H3 başlıklara scroll görünüm efekti */
 .content-section h2,
 .oda h3 {
   opacity: 0;
@@ -777,7 +712,6 @@ footer {
   transform: translateY(0);
 }
 
-/* Görseller hover'da zoom + glow */
 .carousel-slide img:hover,
 .oda-slide img:hover,
 .galeri-slide img:hover {
@@ -785,10 +719,7 @@ footer {
   box-shadow: 0 12px 24px rgba(0, 255, 200, 0.2);
 }
 
-
-/* -----------------------------------
-   ODA SLIDE CAPTION STYLES
------------------------------------ */
+/* Resim altı açıklama kutusu */
 .caption {
   position: absolute;
   bottom: 0;
@@ -815,7 +746,7 @@ footer {
   transform: translateY(0);
 }
 
-/* ===== Tatil Beldeleri & Rotalar Grid Yapısı ===== */
+/* Tatil kartları tekrar tanımlandı (daha koyu arka plan) */
 .tatil-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -829,7 +760,7 @@ footer {
   border-radius: var(--radius-large);
   text-align: center;
   transition: transform var(--transition-fast);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .tatil-card:hover {
@@ -853,16 +784,13 @@ footer {
   color: var(--color-text-light);
 }
 
-/* Galeri ve oda slide'larında caption hover efekti */
 .oda-slide:hover .caption,
 .galeri-slide:hover .caption {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* -----------------------------------
-   SLIDER DOT NAVIGATION (Unified)
------------------------------------ */
+/* Slider altındaki nokta göstergeleri */
 .slider-dots {
   display: flex;
   justify-content: center;
@@ -876,7 +804,8 @@ footer {
   border-radius: 50%;
   background-color: #666;
   cursor: pointer;
-  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  transition: background-color var(--transition-fast),
+    transform var(--transition-fast);
 }
 
 .slider-dots .dot:hover {
@@ -888,9 +817,12 @@ footer {
   background-color: #2e3a40;
 }
 
+/* Varsayılan arka plan resmi */
 .default-bg {
-  background: url('./images/hero-mengenler.png') center/cover no-repeat;
+  background: url("./images/hero-mengenler.png") center/cover no-repeat;
 }
+
+/* Resim büyütme için ışık kutusu */
 .lightbox {
   position: fixed;
   top: 0;
@@ -926,6 +858,7 @@ footer {
   transform: scale(1.2);
 }
 
+/* Gizleme için yardımcı sınıf */
 .hidden {
   display: none;
 }
