@@ -1,57 +1,57 @@
 # Mengenler Apart – Web Sitesi / Website
 
-> 🇹🇷 Bu proje **ticari bir iş** kapsamında geliştirilmiştir.  
-> Her hakkı saklıdır. İzinsiz kullanılamaz, çoğaltılamaz veya dağıtılamaz.  
+> 🇹🇷 Bu proje, **ticari bir iş** kapsamında geliştirilmiş özel bir çalışmadır.  
+> İzinsiz kullanılamaz, çoğaltılamaz veya dağıtılamaz.  
 >
-> 🇬🇧 This project has been developed as part of a **commercial work**.  
-> All rights reserved. Unauthorized use, reproduction or distribution is strictly prohibited.
+> 🇬🇧 This project was developed as part of a **commercial engagement**.  
+> All rights reserved. Unauthorized use, reproduction, or distribution is strictly prohibited.
 
 ---
 
 ## 📍 Proje Özeti | Project Summary
 
-**Mengenler Apart**, Muğla şehir merkezinde konumlanan bir apart daire işletmesi için hazırlanmış responsive ve modern tanıtım sitesidir.  
-The website is a responsive and modern showcase site for **Mengenler Apart**, a rental apartment business located in the center of Muğla, Turkey.
+**Mengenler Apart**, Muğla şehir merkezinde konumlanan bir apart işletmesi için geliştirilmiş, mobil uyumlu ve modern bir tanıtım sitesidir.  
+The website is a responsive and modern showcase developed for **Mengenler Apart**, a rental apartment business located in the city center of Muğla, Turkey.
 
 ---
 
 ## 🚀 Özellikler | Features
 
-- Tam responsive tasarım (mobil, tablet, masaüstü)  
-  Fully responsive design (mobile, tablet, desktop)
-- Dinamik galeri ve oda sunumu  
-  Dynamic gallery & room sliders
-- Google Maps konum & yol tarifi  
-  Google Maps integration with directions
-- WebP formatlı optimize görseller  
-  Optimized images in WebP format
-- SEO dostu meta etiketleri  
-  SEO-friendly meta tags
-- PWA desteği (manifest.json ile)  
-  PWA support via manifest.json
+- ✅ Tam responsive tasarım (mobil, tablet, masaüstü)  
+  ✅ Fully responsive layout (mobile, tablet, desktop)  
+- 🖼️ Dinamik galeri ve oda tanıtımları  
+  🖼️ Dynamic room and gallery sliders  
+- 🗺️ Google Maps entegrasyonu  
+  🗺️ Google Maps integration with directions  
+- 📷 WebP formatında optimize görseller  
+  📷 Optimized images in WebP format  
+- 🔍 SEO uyumlu meta etiketleri  
+  🔍 SEO-friendly meta tags  
+- 📱 PWA desteği (manifest.json)  
+  📱 PWA support via manifest.json
 
 ---
 
-## 🛠️ Teknolojiler | Technologies Used
+## 🛠️ Kullanılan Teknolojiler | Technologies Used
 
-- HTML5 + CSS3
-- Vanilla JavaScript (carousel, modal, observer)
-- Google Fonts & FontAwesome
-- IntersectionObserver API (scroll reveal)
-- WebP Görsel Optimizasyonu
-- Git + GitHub Pages Deployment
+- HTML5 + CSS3  
+- Vanilla JavaScript (carousel, modal, observer)  
+- Google Fonts & FontAwesome  
+- IntersectionObserver API (scroll reveal effects)  
+- WebP Image Optimization  
+- Git & GitHub Pages for Deployment
 
 ---
 
-## 📁 Klasör Yapısı | Folder Structure
+## 📁 Proje Klasör Yapısı | Folder Structure
+
 mengenler-apart/
 ├── images/
 │   ├── galeri/
 │   ├── tekkisilik/
-│   ├── çiftkişilik/
-│   ├── tarih/
-│   ├── ulaşım/
-│   └── bolgeler/
+│   ├── ciftkisilik/
+│   ├── bahce/
+│   └── oda2/
 ├── style.css
 ├── index.html
 └── manifest.json
@@ -60,23 +60,22 @@ mengenler-apart/
 
 ## 👨‍💻 Geliştirici | Developer
 
-**👤 Emirhan Dadak**  
-**🎓 Bilgisayar Mühendisliği Öğrencisi** | **Computer Engineering Student**  
-📧 **emirhan.dadak20039@gmail.com**  
-🔗 [**GitHub - emirhandadak**](https://github.com/emirhandadak)
+**Emirhan Dadak**  
+🎓 Bilgisayar Mühendisliği Öğrencisi  
+📧 emirhan.dadak20039@gmail.com  
+🔗 [GitHub - emirhandadak](https://github.com/emirhandadak)
 
-> Bu proje, kendi gelişimim ve profesyonel deneyim kazanmam adına freelance olarak gerçekleştirdiğim bir çalışmadır.  
-> A freelance project delivered as part of my growth as a Computer Engineering student.
+> Bu proje, yazılım geliştirme sürecimde profesyonel deneyim kazanmak adına freelance olarak gerçekleştirilmiştir.  
+> A freelance project delivered as part of my professional development journey.
 
 ---
 
-## ⚠️ Telif Notu | License & Legal Notice
+## ⚠️ Telif & Lisans | License & Legal Notice
 
 > 🇹🇷 Bu proje bir müşteriye özel olarak geliştirilmiş olup açık kaynak değildir.  
-> Tüm kodlar, içerik ve görseller yalnızca bu proje için üretilmiş olup üçüncü şahıslar tarafından kullanılamaz.  
+> Kodlar, içerikler ve tüm görseller yalnızca bu projeye özeldir ve izinsiz kullanılamaz.  
 
-> 🇬🇧 This is a **private commercial project** developed for a client.  
-> All code, content and visuals are exclusive to this project and may not be reused, copied, or redistributed without explicit permission.
+> 🇬🇧 This is a **private, client-exclusive project**, and is **not open-source**.  
+> All code, content, and visuals are protected and cannot be used without explicit permission.
 
 ---
-
